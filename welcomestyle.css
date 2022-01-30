@@ -132,9 +132,15 @@
     }
 }
 
-@media (max-width:420px){
+@media (max-width:368px){
     .card .content {
         padding: 30px;
+    }
+    .card img {
+       width: 100%;
+        bottom: 0;
+        left: 50%;
+
     }
     .card:hover img {
         height:300px;

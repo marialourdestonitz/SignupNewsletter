@@ -1,0 +1,247 @@
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    overflow: hidden;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(image/sushi.jpg);
+    background-size: cover;
+}
+
+section .color {
+    position: absolute;
+    filter: blur(150px);
+}
+
+section .color:nth-child(1){
+    top: -350px;
+    width: 1500px;
+    height: 600px;
+    background: rgb(143, 11, 11);
+}
+
+section .color:nth-child(2){
+    bottom: -150px;
+    width: 1500px;
+    height: 500px;
+    background: rgb(97, 94, 94);
+}
+
+section .color:nth-child(3){
+    bottom: 50px;
+    right: 800px;
+    width: 3s00px;
+    height: 300px;
+    background: rgb(107, 58, 58);
+}
+
+.box  {
+    position: relative;
+}
+
+.box .circle {
+    position: absolute;
+    backdrop-filter: blur(8px);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    animation: animate 10s linear infinite ;
+    animation-delay: calc(-1s * var(--1));
+}
+
+@keyframes animate {
+    0%,100% {
+        transform: translateY(-40px);
+    }
+    50% {
+        transform: translateY(40px);
+    }
+}
+
+.box .circle:nth-child(1){
+    top: -25px;
+    right: -60px;
+    width: 100px;
+    height: 100px;
+}
+
+.box .circle:nth-child(2){
+    top: 100px;
+    left: -80px;
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+}
+
+.box .circle:nth-child(3){
+    bottom: 50px;
+    right: -30px;
+    width: 80px;
+    height: 80px;
+    z-index: 2;
+}
+
+.box .circle:nth-child(4){
+    bottom: -40px;
+    left: 20px;
+    width: 80px;
+    height: 80px;
+}
+
+.box .circle:nth-child(5){
+    top: -30px;
+    left:100px;
+    width: 60px;
+    height: 60px;
+}
+
+.container {
+    position: relative;
+    min-height: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2); 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.form {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+}
+
+.form h2 {
+    position: relative;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.form h2::before {
+    content: '';
+    position: absolute;
+    left: 76px;
+    bottom: -10px;
+    width: 80px;
+    height: 4px;
+    background: #fff;
+}
+
+.form .inputBox {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.form .inputBox  input {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    outline: none;
+    padding: 10px 20px ;
+    border-radius: 35px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.form .inputBox  textarea {
+    width: 315px;
+    height: 141px;
+    resize: none;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    outline: none;
+    padding: 10px 20px ;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #fff !important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+form .inputBox input::placeholder{
+    color: #fff;
+}
+
+form .inputBox textareas::placeholder{
+    color: #fff;
+}
+
+form .inputBox input[type="submit"]{
+    background: #fff;
+    color: #666;
+    max-width: 150px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-left: 80px;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    transition: .5s ease-in-out;
+}
+
+form .inputBox input[type="submit"]:hover{
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-weight: 600;
+}
+
+@media (max-width:991px)
+{
+    .container {
+        position: relative;
+        width: auto;
+        max-width: 600px;
+    }
+   
+}
+
+@media (max-width:368px)
+{
+    .container {
+        position: relative;
+        width: auto;
+        max-width: 400px;
+    }
+
+    .input {
+        max-width: 400px;
+    }
+
+    .form {
+        width: auto;
+        height: 100%;
+        padding: 20px;
+    }
+   
+}

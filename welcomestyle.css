@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+        overflow: hidden;
+    }
+    
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    
+    section .color {
+        position: absolute;
+        filter: blur(150px);
+    }
+    
+    section .color:nth-child(1){
+        top: -350px;
+        width: 1500px;
+        height: 600px;
+        background: rgb(143, 11, 11);
+    }
+    
+    section .color:nth-child(2){
+        bottom: -150px;
+        width: 1500px;
+        height: 500px;
+        background: rgb(97, 94, 94);
+    }
+    
+    section .color:nth-child(3){
+        bottom: 50px;
+        right: 800px;
+        width: 3s00px;
+        height: 300px;
+        background: rgb(107, 58, 58);
+    }
+    
+
+.card {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    margin: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 20px;
+    background: linear-gradient(150deg,#ff00,#f00);
+
+}
+
+.card img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform:translateX(-50%);
+    height: 400px;
+    transition: 0.5s;
+}
+
+.card:hover img {
+    left: 80%;
+    height: 500px;
+}
+
+.card .content{
+    position: relative;
+    width: 50%;
+    left: 20%;
+    opacity: 0;
+    visibility: hidden;
+    padding: 20px 20px 20px 40px;
+    transition: 0.5s;
+}
+
+.card:hover  .content {
+    left: 0%;
+    opacity: 1;
+    visibility: visible;
+}
+
+.card .content h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    line-height: 1em;
+}
+
+.card .content p {
+    color: #fff;
+}
+
+.card .content a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 10px;
+    border-radius: 10px;
+    background: #fff;
+    margin-top: 10px;
+    text-decoration: none;
+
+}
+
+@media (max-width:991px)
+{
+    .card {
+        position: relative;
+        width: auto;
+        max-width: 600px;
+        align-items: flex-start;
+    }
+    .card:hover {
+        height: 600px;
+    }
+    .card:hover img {
+        left: 50%;
+        height:350px;
+    }
+    .card .content {
+        width: 100%;
+        left: 0;
+        padding: 40px;
+
+    }
+}
+
+@media (max-width:420px){
+    .card .content {
+        padding: 30px;
+    }
+    .card:hover img {
+        height:300px;
+    }
+}

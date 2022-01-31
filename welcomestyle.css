@@ -14,6 +14,8 @@
         justify-content: center;
         align-items: center;
         min-height: 100vh;
+        background: linear-gradient(350deg,#ff00,#f00);
+        background-size: cover;
     }
 
 .card {
@@ -98,7 +100,6 @@
     }
     .card .content {
         width: 100%;
-        left: 0;
         padding: 40px;
 
     }
@@ -117,4 +118,16 @@
     .card:hover img {
         height:300px;
     }
+
+    .card:hover  .content {
+        left: 0%;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .card .content{
+        visibility: hidden;
+
+    }
+    
 }

@@ -17,6 +17,7 @@ section {
     min-height: 100vh;
     background-image: url(image/sushi.jpg);
     background-size: cover;
+    width: 100%;
 }
 
 .box  {
@@ -203,8 +204,8 @@ form .inputBox input[type="submit"]:hover{
 {
     .container {
         position: relative;
-        width: auto;
-        max-width: 400px;
+        width: 100%;
+        max-width: 1200px;
     }
 
     .input {
@@ -212,9 +213,44 @@ form .inputBox input[type="submit"]:hover{
     }
 
     .form {
-        width: auto;
-        height: 100%;
+        width: 100%;
         padding: 20px;
+    }
+    .box .circle:nth-child(1){
+        top: -25px;
+        right: 2px;
+        width: 100px;
+        height: 100px;
+    }
+    
+    .box .circle:nth-child(2){
+        top: 100px;
+        left: -80px;
+        width: 100px;
+        height: 100px;
+        z-index: 2;
+    }
+    
+    .box .circle:nth-child(3){
+        bottom: 8px;
+        right: 4px;
+        width: 80px;
+        height: 80px;
+        z-index: 2;
+    }
+    
+    .box .circle:nth-child(4){
+        bottom: -40px;
+        left: 20px;
+        width: 80px;
+        height: 80px;
+    }
+    
+    .box .circle:nth-child(5){
+        top: -30px;
+        left:100px;
+        width: 60px;
+        height: 60px;
     }
    
 }

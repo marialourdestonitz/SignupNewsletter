@@ -19,33 +19,6 @@ section {
     background-size: cover;
 }
 
-section .color {
-    position: absolute;
-    filter: blur(150px);
-}
-
-section .color:nth-child(1){
-    top: -350px;
-    width: 1500px;
-    height: 600px;
-    background: rgb(143, 11, 11);
-}
-
-section .color:nth-child(2){
-    bottom: -150px;
-    width: 1500px;
-    height: 500px;
-    background: rgb(97, 94, 94);
-}
-
-section .color:nth-child(3){
-    bottom: 50px;
-    right: 800px;
-    width: 3s00px;
-    height: 300px;
-    background: rgb(107, 58, 58);
-}
-
 .box  {
     position: relative;
 }
@@ -243,21 +216,6 @@ form .inputBox input[type="submit"]:hover{
         height: 100%;
         padding: 20px;
     }
-
-    body {
-        width: auto;
-        height: 100%;
-    }
    
 }
 
-@viewport {
-
-    zoom:1.0;
-    width: extend-to zoom;
-}
-
-@-ms-viewport {
-    width: extend-to-zoom;
-    zoom: 1.0;
-}

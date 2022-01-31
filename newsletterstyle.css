@@ -216,32 +216,3 @@ form .inputBox input[type="submit"]:hover{
     font-weight: 600;
 }
 
-@media (max-width:991px)
-{
-    .container {
-        position: relative;
-        width: auto;
-        max-width: 600px;
-    }
-   
-}
-
-@media (max-width:368px)
-{
-    .container {
-        position: relative;
-        width: auto;
-        max-width: 400px;
-    }
-
-    .input {
-        max-width: 400px;
-    }
-
-    .form {
-        width: auto;
-        height: 100%;
-        padding: 20px;
-    }
-   
-}

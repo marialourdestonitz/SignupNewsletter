@@ -222,18 +222,17 @@ form .inputBox input[type="submit"]:hover{
     }
     
     .box .circle:nth-child(2){
-        top: -100px;
-        left: -80px;
+        bottom: 50px;
+        left: 20px;
         width: 100px;
         height: 100px;
     }
     
     .box .circle:nth-child(3){
-        bottom: -70px;
-        right: -20px;
-        width: 80px;
-        height: 80px;
-        z-index: 2;
+        bottom: -20px;
+        right: -2px;
+        width: 60px;
+        height: 60px;
     }
     
     .box .circle:nth-child(4){
@@ -248,7 +247,6 @@ form .inputBox input[type="submit"]:hover{
         left:20px;
         width: 60px;
         height: 60px;
-        z-index: 2;
     }
    
 }

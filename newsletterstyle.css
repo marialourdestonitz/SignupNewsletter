@@ -57,27 +57,25 @@ section {
     left: -80px;
     width: 100px;
     height: 100px;
-    z-index: 2;
 }
 
 .box .circle:nth-child(3){
-    bottom: 8px;
-    right: -35px;
-    width: 80px;
-    height: 80px;
-    z-index: 2;
+    bottom: -50px;
+    right: -30px;
+    width: 100px;
+    height: 100px;
 }
 
 .box .circle:nth-child(4){
     bottom: -40px;
-    left: 20px;
+    left: -20px;
     width: 80px;
     height: 80px;
 }
 
 .box .circle:nth-child(5){
-    top: -30px;
-    left:100px;
+    top: -20px;
+    left:-40px;
     width: 60px;
     height: 60px;
 }
@@ -218,39 +216,39 @@ form .inputBox input[type="submit"]:hover{
     }
     .box .circle:nth-child(1){
         top: -25px;
-        right: 2px;
+        right: -2px;
         width: 100px;
         height: 100px;
     }
     
     .box .circle:nth-child(2){
-        top: 100px;
+        top: -100px;
         left: -80px;
         width: 100px;
         height: 100px;
-        z-index: 2;
     }
     
     .box .circle:nth-child(3){
-        bottom: 8px;
-        right: 4px;
+        bottom: -70px;
+        right: -20px;
         width: 80px;
         height: 80px;
         z-index: 2;
     }
     
     .box .circle:nth-child(4){
-        bottom: -40px;
-        left: 20px;
+        bottom: -50px;
+        left: -10px;
         width: 80px;
         height: 80px;
     }
     
     .box .circle:nth-child(5){
-        top: -30px;
-        left:100px;
+        top: 10px;
+        left:20px;
         width: 60px;
         height: 60px;
+        z-index: 2;
     }
    
 }

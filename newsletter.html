@@ -24,21 +24,21 @@
                             <h2>Newsletter SignUp</h2>
                             <form method="post" autocomplete="off" name="google-sheet">
                                 <div class="inputBox">
-                                    <input type="text" name="FirstName"placeholder="First Name">
+                                    <input type="text" name="FirstName"placeholder="First Name" required>
                                 </div>
                                 <div class="inputBox">
-                                    <input type="text" name="LastName" placeholder="LastName">
+                                    <input type="text" name="LastName" placeholder="LastName" >
                                 </div>
                                 <div class="inputBox">
-                                    <input type="email" name="Email" placeholder="Email">
+                                    <input type="email" name="Email" placeholder="Email" required>
                                 </div>
                                 <div class="inputBox">
-                                    <input type="phone"name="PhoneNumber" placeholder="Phone Number">
+                                    <input type="phone"name="PhoneNumber" placeholder="Phone Number" required>
                                 </div>
                                 <br>
                                     <p>Privacy Policy</p>
                                     <div class="check">
-                                        <input type="checkbox" name="Agree">
+                                        <input type="checkbox" name="Agree" required> 
                                         <label for="checkbox">I accept the terms and condition</label>
                                     </div>
                                     
@@ -55,18 +55,19 @@
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-    <script type="text/javascript">
+    <script>
 
 
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbyClX15c7WesXrfsojqgnYjDYOCag3wmOI_uez93jbt0sQqU9rIA7n7I3bIjLN8e3aL/exec'
-              const form = document.forms['google-sheet']
-            
-              form.addEventListener('submit', e => {
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbycqL7C2VBOrZ-XRgioCEhFvDHd3My4DfIySMcRjumROWx5R0_FaMU2b8MhK3M1Os70/exec'
+        const form = document.forms['google-sheet']
+      
+        form.addEventListener('submit', e => {
           e.preventDefault()
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => alert("Thanks you for Subscrbing!!.\n\nYou will be recieving SMS Alert for our upcoming Promos."))
+            .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
             .catch(error => alert("You Are Already Registered!!")) 
         })
+      </script>
       </script>
               
     </script>

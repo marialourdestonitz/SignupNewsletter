@@ -24,7 +24,7 @@
     height: 400px;
     margin: 20px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     border-radius: 20px;
     background: linear-gradient(150deg,#ff00,#f00);
@@ -34,14 +34,17 @@
 .card img {
     position: absolute;
     bottom: 0;
-    left: 50%;
-    transform:translateX(-50%);
+    justify-content: center;
     height: 400px;
     transition: 0.5s;
+    -webkit-transition: opacity 2s ease-in-out ;
+    -moz-transition:  opacity 2s ease-in-out;
+    -ms-transition: opacity 2s ease-in-out;
+    -o-transition: opacity 2s ease-in-out;
+
 }
 
 .card:hover img {
-    left: 80%;
     height: 500px;
     visibility: hidden;
 }
@@ -114,21 +117,22 @@
     .card .content {
         padding: 100px;
         align-items: center;
+        justify-content: center;
     }
     .card img {
-        width: 400px;
+        width: 80%;
         bottom: 0;
-        left: 50%;
         transition: 0.3s;
+        justify-content: center;
 
     }
     .card:hover img {
+        transition: opacity 1s ease-in-out;
         height:300px;
         visibility: hidden;
     }
 
     .card:hover  .content {
-        left: 0%;
         opacity: 1;
         visibility: visible;
     }

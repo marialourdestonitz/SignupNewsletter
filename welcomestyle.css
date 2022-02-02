@@ -20,10 +20,11 @@
 
 .card {
     position: relative;
-    width: 1000px;
+    width: 800px;
     height: 400px;
     margin: 20px;
     display: flex;
+    text-align: center;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
@@ -34,17 +35,14 @@
 .card img {
     position: absolute;
     bottom: 0;
-    justify-content: center;
+    left: 50%;
+    transform:translateX(-50%);
     height: 400px;
-    transition: 0.5s;
-    -webkit-transition: opacity 2s ease-in-out ;
-    -moz-transition:  opacity 2s ease-in-out;
-    -ms-transition: opacity 2s ease-in-out;
-    -o-transition: opacity 2s ease-in-out;
-
+    transition: 0.2s;
 }
 
 .card:hover img {
+    left: 80%;
     height: 500px;
     visibility: hidden;
 }
@@ -81,7 +79,7 @@
 .card .content a {
     position: relative;
     display: inline-block;
-    padding: 10px 10px ;
+    padding: 10px 10px;
     border-radius: 10px;
     background: #fff;
     margin-top: 10px;
@@ -113,26 +111,27 @@
     }
 }
 
-@media (max-width:368px){
+@media (max-width:365px){
     .card .content {
         padding: 100px;
         align-items: center;
+        align-items: center;
         justify-content: center;
+        width: 100%;
     }
     .card img {
-        width: 80%;
+       width: 100%;
         bottom: 0;
-        transition: 0.3s;
-        justify-content: center;
+        left: 50%;
 
     }
     .card:hover img {
-        transition: opacity 1s ease-in-out;
         height:300px;
         visibility: hidden;
     }
 
     .card:hover  .content {
+        width: 100%;
         opacity: 1;
         visibility: visible;
     }
@@ -142,19 +141,19 @@
 
     }
 
-    .card .content a {
-        margin-top: 20px;
-        margin-left: 65px;
-        align-items: center;
+    .card {
+        max-width: 100%;
         justify-content: center;
-    
+        align-items: center;
+        text-align: center;
+        display: flex;
     }
 
-    
     .card .content p {
-        margin-top: 20px;
-        text-align: center;
-    
+        width: 100%;
+        padding: 30px;
+        justify-content: center;
+
     }
     
     
